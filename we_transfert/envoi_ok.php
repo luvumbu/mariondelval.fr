@@ -90,81 +90,91 @@ $name = $_SESSION["name"] ;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lien de Téléchargement</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #34495E, #2ECC71);
-            color: #ECF0F1;
-            text-align: center;
-            padding: 20px;
-        }
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg,rgb(20, 26, 24),rgb(34, 59, 54));
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    height: 2222px;
+    overflow: hidden; /* Hide scrollbars */
+}
 
-        h2 {
-            margin: 20px 0;
-            font-size: 1.5rem;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-        }
+h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+}
 
-        a {
-            color: #E67E22;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2rem;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 10px 15px;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 10px 0;
-            transition: background 0.3s;
-        }
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.1); /* Blanc transparent */
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
+    transition: background 0.3s;
+}
 
-        a:hover {
-            background: rgba(255, 255, 255, 0.4);
-        }
+a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Blanc légèrement plus visible */
+}
 
-        input[type="text"] {
-            width: 80%;
-            max-width: 400px;
-            padding: 10px;
-            margin: 10px 0;
-            border: 2px solid #ECF0F1;
-            border-radius: 5px;
-            background: rgba(255, 255, 255, 0.1);
-            color: #ECF0F1;
-            font-size: 1rem;
-            text-align: center;
-            outline: none;
-            transition: background 0.3s, border 0.3s;
-        }
+input[type="text"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    background: #1F1F1F; /* Fond sombre */
+    color: #FFFFFF;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+    transition: background 0.3s, border 0.3s;
+}
 
-        input[type="text"]:focus {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: #E67E22;
-        }
+input[type="text"]:focus {
+    background: #292929; /* Fond un peu plus clair */
+}
 
-        div[onclick="send()"] {
-            display: inline-block;
-            margin: 20px 0;
-            padding: 10px 20px;
-            background: #8E44AD;
-            color: #ECF0F1;
-            font-weight: bold;
-            font-size: 1.2rem;
-            border-radius: 5px;
-            cursor: pointer;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s, background 0.3s;
-        }
+div[onclick="send()"] {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #1F1F1F; /* Gris sombre */
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+}
 
-        div[onclick="send()"]:hover {
-            background: #9B59B6;
-            transform: translateY(-3px);
-        }
+div[onclick="send()"]:hover {
+    background: #292929;
+    transform: translateY(-3px);
+}
 
-        div[onclick="send()"]:active {
-            transform: translateY(0);
-        }
+div[onclick="send()"]:active {
+    transform: translateY(0);
+}
+
+.menu_p {
+    float: left;
+    padding: 10px;
+    background-color: #1F1F1F; /* Gris sombre */
+    color: white;
+    border-radius: 5px;
+}
+
     </style>
 </head>
 <body>

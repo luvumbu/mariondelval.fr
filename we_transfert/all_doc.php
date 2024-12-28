@@ -77,7 +77,7 @@ $databaseHandler->get_dynamicVariables();
     echo "Aucun fichier " ; 
  }
  else {
-    echo "OK" ; 
+ 
  
 
 
@@ -93,10 +93,15 @@ $databaseHandler->get_dynamicVariables();
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #1ABC9C, #16A085);
+            background: linear-gradient(135deg,rgb(20, 26, 24),rgb(34, 59, 54));
             color: #fff;
             text-align: center;
             padding: 20px;
+            background-repeat: no-repeat;
+            overflow: hidden; /* Hide scrollbars */
+        
+            width: 100%;
+            height: 2000px;
         }
 
         h1 {
@@ -132,6 +137,13 @@ $databaseHandler->get_dynamicVariables();
 <body>
     <h1>Télécharger un fichier</h1>
     <a href="<?= '../'.$dynamicVariables['file_path'][0] ?>" download>Télécharger le fichier</a>
+<br/> 
+
+<br/> 
+
+<a href="../">
+    <div class="menu_p">MENU PRINCIPAL</div>
+</a>
 </body>
 </html>
 
@@ -139,3 +151,13 @@ $databaseHandler->get_dynamicVariables();
     <?php 
  }
 ?>
+
+<style>
+    .menu_p{
+        width: 300px;
+        text-align: center;
+        margin: auto;
+    
+        color: white;
+    }
+</style>
